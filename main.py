@@ -1,7 +1,8 @@
 from dziennik import Dziennik
 
-d = Dziennik(rok=2021, litera='b')
-d.dodaj_studenta('Janusz', 'Nowak',)
-d.dodaj_studenta('Piotr', 'Skowyrski')
-
-print(d.podaj_lilosc_studentow())
+dziennik = Dziennik(rok=2021, litera='b')
+dziennik.dodaj_studenta('Janusz', nazwisko='Nowak', )
+dziennik.dodaj_studenta('Piotr', nazwisko='Skowyrski')
+student = dziennik.pobierz_studenta(1)
+print(student.pobierz_srednia_ocen())
+#print(dziennik.podaj_lilosc_studentow())
